@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -14,6 +14,9 @@
 		<div id="login-container-wrapper">
 			<div id="login-container">
 				<h2>로그인</h2>
+				
+				
+				
 				<!-- localhost:8080/login 로 username, password 전송 -->
 				<form action="${pageContext.request.contextPath}/login" method="post">
 					<!-- csrf 토큰 -->
@@ -27,6 +30,10 @@
 						<label for="password">비밀번호</label>
 						<input type="password" id="password" name="password">
 					</div>
+					<!-- 로그인 실패 시 오류 메세지 표시 -->
+					<c:if test="${not empty param.error}">
+						<p style="color:red;">아이디 또는 비밀번호가 잘못되었습니다.</p>
+					</c:if>
 					<button type="submit" id="login-button">로그인</button>
 				</form>
 				<div id="register-link">

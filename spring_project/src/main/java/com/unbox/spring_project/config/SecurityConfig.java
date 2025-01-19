@@ -94,7 +94,7 @@ public class SecurityConfig {
 					session.setAttribute("MANAGER", true);
 				}
 				session.setAttribute("username", authentication.getName());
-				session.setAttribute("isAuthenticatied", true);
+				session.setAttribute("isAuthenticated", true);
 				// request.getContextPath() => localhost:8080
 				response.sendRedirect(request.getContextPath()+"/");
 				

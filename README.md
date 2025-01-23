@@ -36,7 +36,7 @@
 | Database | MySQL |
 | Testing | Swagger |
 | Frontend | HTML5, CSS3, JavaScript |
-| Backend | Spring Boot (v3.3.3), Java (OpenJDK-17) |
+| Backend | Spring Boot (v3.4.1), Java (OpenJDK-17) |
 | IDE | Visual Studio Code, Eclipse |
 | Collaboration | GitHub |
 

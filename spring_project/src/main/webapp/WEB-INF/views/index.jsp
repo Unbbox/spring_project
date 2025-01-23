@@ -19,10 +19,12 @@
 				<!-- 특별한 기능(jstl이라는 라이브러리를 이용한 세션에 있는 변수 설정) -->
 				<!-- 세션 공간에 저장되어있는 "MANAGER"의 값이 true일 때 작성이라는 버튼이 보이게끔 할 것 -->
 				<c:if test="${MANAGER == true}">
-					<Button type="button" onclick="location.href=`{pageContext.request.contextPath}/noticeAdd`">작성</Button>
+					<Button type="button" onclick="location.href=`${pageContext.request.contextPath}/noticeAddPage`">작성</Button>
 				</c:if>
 			
-				<div id="menuList"></div>
+				<div id="menuList">
+				</div>
+				
 			</div>
 		</div>
 		

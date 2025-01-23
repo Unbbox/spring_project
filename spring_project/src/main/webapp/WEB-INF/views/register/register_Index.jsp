@@ -4,7 +4,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>회원가입</title>
+		<title>언빡스 카페</title>
 		<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/register/style.css">
 		
 	</head>

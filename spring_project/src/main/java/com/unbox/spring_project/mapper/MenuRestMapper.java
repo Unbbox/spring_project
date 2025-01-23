@@ -16,14 +16,14 @@ import com.unbox.spring_project.entity.Menu;
 public interface MenuRestMapper {
 
 	// insert
-	@Insert("INSERT INTO backend_spring_project(memID,title,content,writer,indate) VALUES(#{memID},#{title},#{content},#{writer},#{indate})")
+	@Insert("INSERT INTO backend_spring_project.menu(memID,title,content,writer,indate) VALUES(#{memID},#{title},#{content},#{writer},#{indate})")
 	public void boardInsert(Menu menu);
 	
 	// select
-	@Select("SELECT idx, memID, title, content, indate, count FROM backend_spring_project.memu ORDER BY idx DESC")
+	@Select("SELECT idx, memID, title, content, writer, indate, count FROM backend_spring_project.menu ORDER BY idx DESC")
 	public List<Menu> getList();
 	
-	@Select("SELECT idx, memID, title, content, indate, count FROM backend_spring_project.memu WHERE idx = #{idx}")
+	@Select("SELECT idx, memID, title, content, writer, indate, count FROM backend_spring_project.menu WHERE idx = #{idx}")
 	public Menu boardContent(int idx);
 	
 	// update

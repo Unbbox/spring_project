@@ -47,7 +47,7 @@ public class SecurityConfig {
 				.requestMatchers(HttpMethod.POST, "/login", "/register").permitAll()
 				// resources, WEB-INF 하위 폴더 전부 허용
 				.requestMatchers("/resources/**", "/WEB-INF/**").permitAll()
-				.requestMatchers("/noticeAdd", "/noticeModifyPage").hasAnyAuthority("ADMIN", "MANAGER")
+				.requestMatchers("/noticeAddPage", "/noticeModifyPage").hasAnyAuthority("ADMIN", "MANAGER")
 				.requestMatchers(HttpMethod.POST, "/menu/add").hasAnyAuthority("ADMIN", "MANAGER")
 				.requestMatchers(HttpMethod.POST, "/menu/update").hasAnyAuthority("ADMIN", "MANAGER")
 				.requestMatchers(HttpMethod.DELETE, "/menu/delete").hasAnyAuthority("ADMIN", "MANAGER")

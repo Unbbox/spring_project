@@ -6,7 +6,7 @@ public class Menu {
 	private String memID;
 	private String title;
 	private String content;
-	private String wrtier;
+	private String writer;
 	private String indate;
 	private int count;
 	
@@ -17,7 +17,7 @@ public class Menu {
 		this.memID = memID;
 		this.title = title;
 		this.content = content;
-		this.wrtier = wrtier;
+		this.writer = wrtier;
 		this.indate = indate;
 		this.count = count;
 	}
@@ -54,12 +54,12 @@ public class Menu {
 		this.content = content;
 	}
 
-	public String getWrtier() {
-		return wrtier;
+	public String getWriter() {
+		return writer;
 	}
 
-	public void setWrtier(String wrtier) {
-		this.wrtier = wrtier;
+	public void setWriter(String wrtier) {
+		this.writer = wrtier;
 	}
 
 	public String getIndate() {

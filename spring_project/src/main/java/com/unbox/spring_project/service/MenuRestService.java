@@ -25,8 +25,9 @@ public class MenuRestService {
 	}
 	
 	// 특정 게시글 조회
-	public void boardContent(int idx) {
-		menuRestMapper.boardContent(idx);
+	public Menu boardContent(int idx) {
+		return menuRestMapper.boardContent(idx);
+		
 	}
 	
 	// 게시글 수정

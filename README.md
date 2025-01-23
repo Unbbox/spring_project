@@ -42,7 +42,7 @@
 ![DB 구조]
 
 #### API 설계
-![API 구조] ![api 구조](https://github.com/user-attachments/assets/9b99d3e1-730f-4371-94a0-22231028fb9b)
+![api 구조](https://github.com/user-attachments/assets/9b99d3e1-730f-4371-94a0-22231028fb9b)
 
 
 ## API 명세서
